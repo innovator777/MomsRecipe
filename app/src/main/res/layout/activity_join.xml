@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="  e-mail을 입력하세요."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/editPw"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="6자리 이상"
+        android:inputType="textPassword"
+        android:layout_below="@id/editId"
+        />
+    <EditText
+        android:id="@+id/editRPw"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="6자리 이상"
+        android:layout_below="@id/editPw"
+        />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/editId"
+        android:layout_alignBaseline="@+id/editId"
+        android:text="ID"
+        />
+
+    <TextView
+        android:id="@+id/pwText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editPw"
+        android:layout_toLeftOf="@+id/editPw"
+        android:text="비빌번호"
+        />
+
+    <TextView
+        android:id="@+id/rpwText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/editRPw"
+        android:layout_alignBaseline="@+id/editRPw"
+        android:text="비밀번호 확인"
+        />
+
+
+    <Button
+        android:id="@+id/btnjoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

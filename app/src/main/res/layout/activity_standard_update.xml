@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/txtInvisible1"
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:visibility="invisible"
+      android:layout_centerHorizontal="true"
+      />
+  <ImageView
+      android:id="@+id/imageStandard"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/txtInvisible1"
+      />
+  <ImageView
+      android:id="@+id/invisibleImage"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/txtInvisible1"
+      android:visibility="visible"
+      android:src="@drawable/ic_crop_original_black_24dp"
+      />
+  <Button
+      android:id="@+id/btnPhoto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/imageStandard"
+      android:layout_alignRight="@+id/imageStandard"
+      android:text="사진가져오기"
+      />
+  <EditText
+      android:id="@+id/editStandard"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:hint="기준을 입력하세요"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/btnPhoto"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="기준: "
+      android:layout_toLeftOf="@id/editStandard"
+      android:layout_alignBaseline="@id/editStandard"
+      />
+  <Button
+      android:id="@+id/btnUpdate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/editStandard"
+      android:text="등록하기"
+      />
+</RelativeLayout>
